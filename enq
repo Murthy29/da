@@ -1,0 +1,77 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+void en();
+void de();
+void display();
+int front=-1,rare=-1,item ,size,a[100],ch,x;
+int cho;
+int main()
+{
+    printf("input size\n");
+    scanf("%d",&size);
+    do{
+        printf("MENU\n");
+        printf("1.en\n");
+        printf("2.de\n");
+        printf("3.display\n");
+        printf("input choice\n");
+        scanf("%d",&ch);
+        switch(ch)
+        {
+            case 1:en();
+            break;
+            case 2:de();
+            break;
+            case 3:display();
+            default:printf("invalid choice");
+            }
+            printf("do you wish to continue\n");
+            scanf("%d",&cho);
+    }while(cho!=0);
+    
+}
+void display()
+{
+    if(front==-1)
+    printf("the final array are empty");
+    else
+    {printf("the finall array is");
+    for(int i=front;i<=rare;i++)
+    printf("\n%d",a[i]);
+    
+}
+void en()
+{
+    if(rare==size-1)
+    printf("\n Queue is overflow");
+    else
+    {
+        printf("the element to be added\n");
+        scanf("\n%d",&x);
+        if(front==-1&&rare==-1)
+        front=rare=0;
+        else
+        rare++;
+        a[rare]=x;
+    }
+}
+            void de()
+            {
+                if(front!=-1||front>rare)
+                printf("queue underflow");
+                else
+                {
+                    item=a[front];
+                    printf("the deleted element is %d",item);
+                    front++;
+                }
+            }
+}
+            
+    
+    
+            
+        
+        
+        
+    
