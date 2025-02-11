@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Course Registration</title> 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #0e0c0c; 
+        } 
+        .form-container { 
+            width: 50%; 
+            margin: auto; 
+            background-color: rgb(141, 239, 246); 
+            padding: 20px; 
+            box-shadow: 0 0 10px rgba(241, 125, 0, 0.945); 
+            margin-top: 50px; 
+            margin-left: 10px;
+        } 
+        h1 { 
+            text-align: center; 
+        } 
+        label { 
+            display: block; 
+            margin-bottom: 8px; 
+            font-weight: bold; 
+        } 
+        input, select, textarea { 
+            width: 100%; 
+            padding: 10px; 
+            margin-bottom: 15px; 
+            border: 1px solid #f3c2c2; 
+            border-radius: 4px; 
+        } 
+        button { 
+            width: 100%; 
+            padding: 10px; 
+            background-color: #af874c; 
+            color: white; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer; 
+        } 
+        button:hover { 
+            background-color: #e85e09; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <div class="form-container"> 
+        <h1>Course Registration</h1> 
+        <form action="#" method="post"> 
+            <label for="name">Enter yor Name:</label> 
+            <input type="text" id="name" name="name" required> 
+ 
+            <label for="email">Enterv your Email:</label> 
+            <input type="email" id="email" name="email" required> 
+            <label >Enter your Password</label>
+            <input type="password">
+ 
+            <label for="course">Select Course:</label> 
+            <select id="course" name="course" required> 
+                <option value="">-- Select a Course --</option> 
+                <option value="bca101">M.TECH</option> 
+                <option value="bca102">MCA</option> 
+                <option value="bca103">MBA</option> 
+                <!-- Add more courses here --></select> 
+                 <label >Enter your PH.NUMBER</label>
+                 <input type="number">
+ 
+            <label for="comments">Additional Comments:</label> 
+            <textarea id="comments" name="comments" rows="4"></textarea> 
+ 
+            <button type="submit">Register</button> 
+        </form> 
+    </div> 
+</body> 
+</html>
