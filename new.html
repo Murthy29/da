@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/new.css">
+    <script src="/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <h1>welcome to mca06</h1>
+    <div id="box" class="test">
+    <h2>test box</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo aut repellendus illum provident et optio, officia ipsa assumenda dolorem incidunt consequuntur quisquam dolore similique eos explicabo sunt. Reprehenderit, maxime esse!\</p></div>
+    <ul id="list">
+        <li class="test">orange</li>
+        <li>banana</li>
+
+        <li class="test">apple</li>
+        <li>grapes</li>
+
+
+    </ul>
+    <script>
+        $(document).ready(function()
+        {
+            $("ul li:lt(1)").css("border","2px solid red");
+
+        });
+    </script>
+    
+</body>
+</html>
