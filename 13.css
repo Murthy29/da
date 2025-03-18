@@ -1,0 +1,14 @@
+.custom-heading{
+    color: green;
+    text-align: center;
+}
+
+.custom-table{
+    border: 2px solid red;
+}
+
+.custom-form{
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 10px;
+}

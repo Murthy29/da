@@ -1,0 +1,16 @@
+.container{
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 4px;
+    text-align: center;
+}
+
+.abc{
+    background-color: green;
+    font-size: larger;
+    color: white;
+    border: 0;
+    border-radius: 7px;
+    scale: 1;
+}

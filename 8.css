@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.side-nav{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.side-nav a{
+    display: block;
+    background-color: orange;
+    font-size: 30px;
+    width: 120px;
+    padding: 8px;
+    margin: 8px 8px;
+    color: white;
+    text-decoration: none;
+    margin-left: -100px;
+}
+
+.side-nav a:hover{
+    margin-left: 0;
+    transition: 0.7s;
+}
+
